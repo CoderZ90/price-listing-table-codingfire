@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' !important;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232427;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.wrapper .card {
+    position: relative;
+    width: 350px;
+    min-height: 560px;
+    background: #232427;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255,255,255,0.1),
+                5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255,255,255,0.1);
+    border-radius: 15px;
+    /* padding: 30px; */
+    margin: 40px;
+}
+
+.wrapper .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #232427;
+    border: 2px solid #1e1f23;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    transition: 0.5s ease;
+}
+
+.card .box .imgBox {
+    position: absolute;
+    top: 8%;
+    text-align: center;
+    color: #fff;
+    font-size: 2.3rem;
+    background: #1e1f23;
+    width: 80px;
+    min-height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.04);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.imgBox span {
+    position: absolute;
+    color: #00ffff;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.card .box .price {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.card .box .price h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card .box .content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    margin-left: -60px;
+}
+
+.card .box .content p {
+    color: #b9b5b5;
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.card .box .content .checked span {
+    color: #00ff9d;
+}
+
+.card .box .content .cross span {
+    color: #ff3c00;
+}
+
+.content .checked,
+.content .cross {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.card .box button {
+    padding: 15px 45px;
+    background: #1e1f23;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.02),
+                5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 40px;
+    color: #00ffff;
+    font-size: 15.6px;
+    letter-spacing: 0.4px;
+}
+
+.card:hover .box {
+    transform: translateY(-40px);
+}
+
+.card:nth-child(2) .btn button {
+    color: #ff4566;
+    cursor: pointer;
+}
+
+.card:nth-child(3) .btn button {
+    color: #45ff74;
+    cursor: pointer;
+}   
+
+button {
+    cursor: pointer;
+}
+
+.card:nth-child(2) .box .imgBox span {
+    color: #f8627e;
+}
+
+.card:nth-child(3) .box .imgBox span {
+    color: #00ff9d;
+}
+
+@media screen and (max-width: 394px) {
+    button {
+        width: 240px;
+    }
+}
